@@ -35,26 +35,16 @@
  */
 body, html {
    margin: 0px;
-   font-family: Aileron, Abel;
    touch-action: auto;
-   user-scalable: no;
-}
-
-p {
-   font-size: 16px;
-   font-weight: 500;
-}
-p:not(.banner p) {
-   padding-left: 15px;
-   padding-right: 15px;
+   font-size: 1.1rem;
 }
 
 a {
    font-weight: 500;
-}
-a:not(.nav-link):hover {
-   background-color: #1FC22822;
    text-decoration: none;
+}
+a:not(.nav-link, .btn):hover {
+   text-decoration: underline !important;
 }
 a:focus {
    color: #1686E2;
@@ -64,13 +54,6 @@ button:focus {
    outline: none;
 }
 
-.btn {
-   font-size: 1rem;
-   font-weight: 600;
-   padding: 5px 25px;
-   border-radius: 1.2rem;
-}
-
 .show-in {
    opacity: 0;
 }
@@ -78,57 +61,30 @@ button:focus {
 .logo {
    font-weight: 600 !important;
    font-family: Amaranth, Abel;
-   color: #1BBA37 !important;
    user-select: 
 }
 
 .navbar {
    box-shadow: 2px 2px 6px #0001;
 }
-.navbar .nav-link {
-   font-family: Aileron;
-}
-
-.lead {
-   font-family: "Afta Sans Thin", Abel, Helvetica, Arial;
-}
 
 .banner {
-   background-color: transparent !important;
-   background-image: url("../img/web-design-2906159-mobile.jpg");
-   background-size: cover;
-   background-position: center center;
-   min-height: 500px;
-   position: relative;
+   height: 500px;
 }
-.banner .container {
-   position: absolute !important;
-   top: 50%;
-   left: 50%;
-   font-weight: 500;
-   color: white;
-   transform: translate(-50%, -50%);
+.banner img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.banner .position-absolute {
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #0008;
 }
 .banner .container h1 {
    font-family: Amaranth, Aller, Arial, Helvetica;
-}
-.banner .container p:not(.lead) {
-   font-family: Abel, Aileron;
-}
-.banner .container .btn {
-   background-color: #00BA05;
-   color: white;
-   font-family: Amaranth;
-}
-.banner .container .btn:hover {
-   background-color: #1CA74C;
-}
-.banner .container .btn:focus {
-   box-shadow: 0 0 0 0.2rem #5EDA8788;
-}
-
-.form-control {
-   border-radius: 1rem;
 }
 
 section .section-title {
@@ -172,11 +128,6 @@ section img {
 .card {
    border-radius: 12px;
    box-shadow: 2px 2px 12px #0002;
-}
-
-#contact {
-   background-color: #007105;
-   color: white;
 }
 
 #faq .card {
